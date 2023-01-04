@@ -1,0 +1,127 @@
+.header 
+{
+    background: url(https://tf.quomodosoft.com/appie/wp-content/uploads/2022/10/home-1-bg-shape.png) top center / cover no-repeat;
+}
+
+.nav 
+{
+    height: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list 
+{
+    list-style-type: none;
+    display: flex;
+}
+
+.img
+{
+    cursor: pointer;
+}
+
+.item 
+{
+    font-family: sans-serif;
+    font: 16px Poppins;
+    color: #ffffff;
+    padding: 0 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header_content 
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 140px 300px 140px;
+    align-items: center;
+}
+
+.create 
+{
+    width: 580px;
+}
+
+.create_header 
+{
+    color: #101010;
+    font-family: "Poppins",Sans-serif;
+    font-size: 78px;
+    font-weight: 600;
+    line-height: 90px;
+}
+
+.create_text 
+{
+    color: #616161;
+    font-family: "Poppins",Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    height: 60px;
+    margin: 16px 0;
+}
+
+.create_final 
+{
+    margin-top: 24px;
+    align-items: center;
+    align-content: center;
+}
+
+.button 
+{
+    padding: 20px 29px;
+    background-color: #7186f5;
+    font: 16px Roboto, sans-serif;
+    color: #fff;
+    line-height: 0;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.links 
+{
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #7186f5;
+    margin-left: 36px;
+    font-weight: 600;
+}
+
+.start
+{
+    list-style-type: none;
+    font: 16px Poppins, sans-serif;
+}
+
+@media (max-width: 900px) 
+{
+    .list
+    {
+        display: none;
+    }
+
+    .response
+    {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding: 10px;
+        background-color: #c02ed1;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .nav 
+    {
+        justify-content: space-between;
+        padding: 0 38px;
+    }
+
+}
