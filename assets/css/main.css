@@ -1,6 +1,9 @@
 .header 
 {
-    background: url(https://tf.quomodosoft.com/appie/wp-content/uploads/2022/10/home-1-bg-shape.png) top center / cover no-repeat;
+    background: url(https://tf.quomodosoft.com/appie/wp-content/uploads/2022/10/home-1-bg-shape.png);
+    background-position: 45% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav 
@@ -9,6 +12,14 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.header_content 
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 140px 300px 140px;
+    align-items: center;
 }
 
 .list 
@@ -32,13 +43,147 @@
     position: relative;
 }
 
-.header_content 
+.item_font
 {
-    display: flex;
-    justify-content: space-around;
-    padding: 80px 140px 300px 140px;
-    align-items: center;
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 60px;
+    margin-left: 56px;
+    color: #000;
+    font-weight: 400;
+    
 }
+
+.home
+{
+    box-shadow: 4px 8px 14px rgb(0 0 0 / 30%);
+    top: 40px;
+    left: -450px;
+    position: absolute;
+    width: 1200px;
+    background-color: #fff;
+    padding: 30px 10px 10px 40px;
+    z-index: 4;
+    display: none;
+}
+
+.home::before 
+{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 40px;
+    width: 120px;   
+    left: 500px;
+    top: -25px;
+}
+
+.home_list
+{
+    width: 12%;
+    float: left;
+    padding: 0 10px;
+}
+
+.home_list:hover 
+{
+    top: -10px;
+    position: relative;
+    transition-timing-function: ease-out;
+}
+
+.item_home:hover .home 
+{
+    display: block;
+}
+
+.home_img
+{
+    max-width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d9d9d9;
+    height: 195px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.home_text
+{
+    color: #0e1133;
+    font-family: "Roboto",Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 6px 0 28px 0;
+}
+
+.pages 
+{
+    width: auto; 
+    position: absolute;
+    background-color: #fff;
+    width: 150px;
+    top: 30px;
+    left: 15px;
+    border-radius: 5px;
+    padding: 8px 18px 0px 2px;
+    display: none;
+    margin: 0;
+
+}
+
+.item_pages:hover .pages 
+{
+    display: block;
+}
+
+.pages::after 
+{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 60px;
+    left: 0;
+    top: -18px;
+}
+
+.pages_list 
+{
+    list-style-type: none;
+    padding-inline-start: 0px;
+    list-style-type: circle;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.pages_item 
+{
+    right: 0%;
+    transition: right ease-in-out 0.1s;
+    padding-left: 2px;
+}
+
+.pages_item:hover .pages_links 
+{
+    position: relative;
+    right: -6px;
+    color: var(--primary__color);
+}
+
+.pages_links 
+{
+    color: #101010;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 0;
+    display: inline-block;
+}
+
 
 .create 
 {
@@ -86,12 +231,14 @@
 
 .links 
 {
+    font-family: "Poppins",Sans-serif;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 16px;
     line-height: 1.6rem;
     color: #7186f5;
     margin-left: 36px;
     font-weight: 600;
+    line-height: 1.6rem;
 }
 
 .start
@@ -99,6 +246,102 @@
     list-style-type: none;
     font: 16px Poppins, sans-serif;
 }
+
+
+.content 
+{
+    margin-top: 115px;
+    background: url(https://tf.quomodosoft.com/appie/wp-content/uploads/2022/10/home1-bg2.png);
+    background-size: cover;
+    
+}
+
+.content_premium 
+{
+    padding: 0 100px;
+    margin-bottom: 110px;
+}
+
+.premium 
+{
+    background: url(../img/premium.png) center center / cover no-repeat;   
+    padding: 120px 0;
+}
+.nameheader 
+{
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #c02ed1;
+    font-family: "Poppins",Sans-serif;
+    line-height: 16px;
+}
+
+.nameunder 
+{
+    text-align: center;
+    font-weight: 700;
+    color: #101010;
+    font-family: "Poppins",Sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.premium_body 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 52px;
+    padding: 0 38px;
+}
+
+.body_item 
+{
+    font-family: "Poppins",Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.body_item:hover 
+{
+    transition: .3s;
+    z-index: 1;
+    transform: translateY(-15px);
+}
+
+.item_header 
+{
+    color:rgb(14 17 51);
+    letter-spacing: 0.1px;
+    line-height: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 13px;
+    font-family: "Roboto",Sans-serif; 
+}
+
+.item_description 
+{
+    color: rgb(80 80 86);
+    letter-spacing: 0.1px;
+    line-height: 28.8px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Poppins",Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+
+
+
+
 
 @media (max-width: 900px) 
 {
@@ -125,3 +368,4 @@
     }
 
 }
+
